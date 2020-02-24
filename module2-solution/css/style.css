@@ -1,1 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    font-family: cursive;
+}
+.inside {
+    overflow:hidden;
+    float: left;
+    padding: 1%;
+    background-clip: content-box;
+    background-color: lightgray;
+}
+h1 {
+    font-size: 175%;
+    color: red;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color:white;
+}
+h3 {
+    overflow: auto;
+    text-align: end;
+    font-size: 125%;
+    float: right;
+    clear: both;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-style: solid;
+    border: .2px .2px .2px .2px;
+    border-color: black;
+}
+#firstId {
+    background-color: lightskyblue;
+}
+#secondId {
+    background-color: lightpink;
+}
+#thirdId {
+    background-color:  lightyellow;
+}
+p {
+    text-align: center;
+    clear: both;
+    margin: auto;
+    overflow: auto;
+}
+.title {
+    width: 100%;
+}
 
+@media (min-width: 992px) {
+    .first {
+        width: 33.333333%;
+        border-radius: 13%;
+    }
+    .second {
+        width: 33.333333%;
+        border-radius: 13%;
+    }
+    .third {
+        width: 33.33333%;
+        border-radius: 13%;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px)  {
+    .tablet {
+        overflow:hidden;
+        float:left;
+        width: 100%;
+        display: flex;
+    }
+    .third {
+        width: 100%;
+        border-radius: 13%;
+    }
+    .first {
+        width: 50%;
+        flex: 1;
+        border-radius: 13%;
+    }    
+    .second {
+        width: 50%;
+        flex: 1;
+        border-radius: 13%;
+    }
+}
+@media (max-width: 767px) {
+    .first {
+        width: 100%;
+        border-radius: 13%;
+    }
+    .second {
+        width: 100%;
+        border-radius: 13%;
+    }
+    .third {
+        width: 100%;
+        border-radius: 13%;
+    }
+}
